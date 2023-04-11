@@ -1,12 +1,22 @@
 # emi-indo-cordova-plugin-consent
- AdMob Consent for emi-indo-cordova-plugin-admob
+ AdMob Consent for [emi-indo-cordova-plugin-admob](https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob)
+ 
+## The Google User Messaging Platform ( UMP SDK 2.0.0 )
 
 
 
 
 https://user-images.githubusercontent.com/78555833/231193941-b58f6a7f-1de3-49e8-bb0f-7e796604e668.mp4
 
+
+## 💰Sponsor this project
+  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/emiindo)  
+
 ## Installation
+
+[Configure your messages under the Privacy & messaging](https://support.google.com/admob/answer/10107561)
+
+
 
 ```sh
 cordova plugin add emi-indo-cordova-plugin-consent
@@ -20,7 +30,7 @@ let _getConsentRequest = () => {
     cordova.plugins.emiAdmobPlugin.getConsentRequest(
     setTagForUnderAgeOfConsent = false, // boolean
    
-    (status) => { alert(status) }, 
+    (status) => { alert(status) }, // check event code
     (error) => { alert(error)
     
     });
@@ -33,6 +43,8 @@ let _getConsentRequest = () => {
 
 
 ## consent Reset
+
+- You should also call cordova.plugins.emiAdmobPlugin.consentReset(); if you decide to remove the UMP SDK completely from your project.
 
 ```sh
 
@@ -61,6 +73,8 @@ alert("on Consen Info Update Failure");
 
 });
 
+////////////////////////////////////////////////
+
 document.addEventListener('on.ConsentStatus.NOT_REQUIRED', () => {
 // Constant Value: 1
 alert("User consent not required.");
@@ -87,5 +101,27 @@ alert("Consent status is unknown.");
 });
 
 
+////////////////////////////////////////////////////////////
+
+document.addEventListener('on.loadConsentFormError', () => {
+
+alert("on load Consent Form Error");
+
+});
+
+document.addEventListener('on.ConsentFormNotAvailable', () => {
+
+alert("on Consent Form Not Available");
+
+});
+
+
+
+
+
+
 
 ```
+
+
+
