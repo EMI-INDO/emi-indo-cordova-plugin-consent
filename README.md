@@ -21,6 +21,9 @@ https://user-images.githubusercontent.com/78555833/231193941-b58f6a7f-1de3-49e8-
 ```sh
 cordova plugin add emi-indo-cordova-plugin-consent
 ```
+```sh
+cordova plugin add emi-indo-cordova-plugin-admob
+```
 
 ## Remove 
 
