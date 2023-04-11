@@ -1,0 +1,34 @@
+{
+    "name": "emi-indo-cordova-plugin-consent",
+    "version": "0.0.1",
+    "description": "Google offers the User Messaging Platform (UMP) SDK.",
+    "cordova": {
+        "id": "emi-indo-cordova-plugin-consent",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob.git"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova",
+        "plugin",
+        "ad",
+        "admob",
+        "consent",
+        "mediation"
+    ],
+    "author": {
+        "name": "EMI INDO",
+        "url": "https://github.com/EMI-INDO/"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob/issues"
+    },
+    "homepage": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob"
+}
