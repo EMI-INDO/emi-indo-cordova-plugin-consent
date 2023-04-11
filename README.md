@@ -75,6 +75,8 @@ alert("on Consen Info Update Failure");
 
 ////////////////////////////////////////////////
 
+// https://developers.google.com/admob/android/privacy/api/reference/com/google/android/ump/ConsentInformation.ConsentStatus
+
 document.addEventListener('on.ConsentStatus.NOT_REQUIRED', () => {
 // Constant Value: 1
 alert("User consent not required.");
