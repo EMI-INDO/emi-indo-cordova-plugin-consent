@@ -1,3 +1,7 @@
+# DEPRECATED
+- Just install emi-indo-cordova-plugin-admob
+- Because UMP SDK 2.1.0 is already in emi-indo-cordova-plugin-admob
+
 # emi-indo-cordova-plugin-consent
  AdMob Consent for [emi-indo-cordova-plugin-admob](https://github.com/EMI-INDO/emi-indo-cordova-plugin-admob)
  
